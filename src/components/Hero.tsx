@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Spline 3D Background */}
-      <div className="absolute inset-0 z-0 hidden sm:block">
+      <div className="absolute inset-0 z-0">
         <Spline scene="https://prod.spline.design/pi4VQ2Bxl46eWaVb/scene.splinecode" />
       </div>
       <div className="absolute inset-0 bg-black/50 z-[1]" />
