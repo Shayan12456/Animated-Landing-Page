@@ -7,7 +7,7 @@ interface ScrollImageProps {
 }
 
 export default function ScrollImage({ src, direction = 'left', alt = '' }: ScrollImageProps) {
-  const offsetX = direction === 'left' ? -200 : 200;
+  const offsetX = direction === 'left' ? -200 : -200;
 
   return (
     <div className="flex justify-center w-full">

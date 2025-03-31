@@ -1,9 +1,13 @@
 import * as motion from "motion/react-client"
 import type { Variants } from "motion/react"
 
-export default function ScrollTriggered() {
+type HProps = {
+    id?: string;
+  };
+  
+export default function ScrollTriggered({ id }: HProps) {
     return (
-        <div style={container}>
+        <div style={container} id={id}>
             <h1 className="text-6xl font-bold mb-4 mt-20">How it Works?</h1>
             {food.map(([emoji, hueA, hueB], i) => (
                 <Card i={i} emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />

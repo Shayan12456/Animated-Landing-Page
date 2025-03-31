@@ -26,8 +26,8 @@ export default function App(){
                     {/* Right Image */}
                     <ScrollImage src={MusicRoom} direction="right" alt="Guitar" />
                 </section>
-                <Features />
-                <HowItWorks />
+                <Features id="features"/>
+                <HowItWorks id="howitworks" />
 
                 {/* Final 3D Spline Visual Section */}
                 <section className="relative w-full h-[600px] my-24">
@@ -41,12 +41,12 @@ export default function App(){
                     </div>
                 </section>
 
-                <CTA />
+                <CTA id="cta" />
 
                 {/* ✅ Responsive Footer */}
                 <footer className="w-full mt-24 border-t border-gray-700 py-10 px-6 text-sm text-gray-400 text-center">
                     <p>🎵 Built with ❤️ for the Frontend UI Hackathon 2025</p>
-                    <p className="mt-2">© {new Date().getFullYear()} Shayan Kasbati. All rights reserved.</p>
+                    <p className="mt-2">© {new Date().getFullYear()} Shayan. All rights reserved.</p>
                 </footer>
             </div>
         </>
